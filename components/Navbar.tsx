@@ -12,7 +12,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = ["About", "Menu", "Gallery", "Contact"];
+  const links = ["About", "Classes", "Facilities", "Gallery", "Contact"];
 
   return (
     <nav style={{
@@ -61,7 +61,7 @@ export default function Navbar() {
           }}
           onMouseEnter={e => (e.currentTarget.style.opacity = "0.85")}
           onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
-          >Reserve</a>
+          >Admission</a>
         </li>
       </ul>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
             fontSize: "0.9rem", textDecoration: "none",
             textAlign: "center", fontWeight: 500,
           }}>
-            Reserve a Table
+            Admission Enquiry
           </a>
         </div>
       )}

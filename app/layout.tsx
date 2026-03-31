@@ -15,8 +15,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Café Lumière — Fine Casual Dining",
-  description: "Experience exceptional food in a warm, welcoming atmosphere.",
+  title: "Green Valley School — Quality Education in Dhaka",
+  description: "Nurturing minds and building futures since 2005.",
 };
 
 export default function RootLayout({

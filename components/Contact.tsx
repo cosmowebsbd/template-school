@@ -12,7 +12,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Hello ${siteConfig.name}! I'd like to make a reservation.%0A%0AName: ${form.name}%0APhone: ${form.phone}%0ADate: ${form.date}%0AGuests: ${form.guests}%0AMessage: ${form.message}`;
+   const msg = `Hello ${siteConfig.name}! I am interested in admission.%0A%0AStudent Name: ${form.name}%0AParent Phone: ${form.phone}%0AClass Interested: ${form.guests}%0AMessage: ${form.message}`;
     window.open(`https://wa.me/${siteConfig.whatsapp}?text=${msg}`, "_blank");
     setSent(true);
     setTimeout(() => setSent(false), 4000);
@@ -30,13 +30,13 @@ export default function Contact() {
     <section id="contact" style={{ padding: "7rem 5%", background: "var(--color-bg2)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <p style={{ fontSize: "0.72rem", fontWeight: 400, color: "var(--color-accent)", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>Get in Touch</p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 400, color: "var(--color-text)" }}>Reserve a Table</h2>
+          <p style={{ fontSize: "0.72rem", fontWeight: 400, color: "var(--color-accent)", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>Apply Now</p>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 400, color: "var(--color-text)" }}>Map</h2>
           <div style={{ width: "40px", height: "1px", background: "var(--color-accent)", margin: "1.2rem auto 0" }} />
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "start" }} className="contact-grid">
           <div style={{ background: "var(--color-bg)", border: "1px solid var(--color-border)", borderRadius: "8px", padding: "2.5rem" }}>
-            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", fontWeight: 400, marginBottom: "1.5rem", color: "var(--color-text)" }}>Make a Reservation</h3>
+            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", fontWeight: 400, marginBottom: "1.5rem", color: "var(--color-text)" }}>Admission Enquiry</h3>
             {sent && (
               <div style={{ background: "rgba(200,169,110,0.1)", border: "1px solid var(--color-accent)", borderRadius: "4px", padding: "0.8rem 1rem", marginBottom: "1.2rem", fontSize: "0.85rem", color: "var(--color-accent)" }}>
                 ✓ Redirecting to WhatsApp...

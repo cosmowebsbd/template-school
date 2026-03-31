@@ -59,7 +59,7 @@ export default function Hero() {
             fontSize: "0.85rem", fontWeight: 500,
             textDecoration: "none", letterSpacing: "0.08em",
             textTransform: "uppercase",
-          }}>View Menu</a>
+          }}>Our Classes</a>
           <a href="#contact" style={{
             border: "1px solid rgba(200,169,110,0.4)",
             color: "rgba(245,240,232,0.85)",
